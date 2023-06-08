@@ -1,20 +1,44 @@
 .rodapie{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     align-items: center;
     padding-top: 5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-@media screen and (min-width:0) {
-    .rodapie{
-        flex-direction: column;
-        
     }
+.rodapie__titulo{
+    color:  #8C8888 ;
+    font-weight: 400;
+    font-size: 1.25rem;
+    padding: 1.565rem;
+}
+.rodapie__descripcion{
+    color:  #8C8888 ;
+    font-size: 2rem;
+
+}
+.rodapie__lista{
+    display: flex;
+}
+.rodapie__item{
+    
+    list-style: none;
+}
+.rodapie__icon{
+    margin-right: 1rem;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:0){
+    .rodapie{
+        flex-direction: column;
+    }
+   
+  
+}
+@media screen and (min-width:768px){
     .rodapie{
         flex-direction: row;
     }
+
+   
+  
 }
